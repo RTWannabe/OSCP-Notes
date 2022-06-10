@@ -34,3 +34,5 @@
   * [MSFvenom](5.-maintaining-access/msfvenom.md)
   * [File transfers](5.-maintaining-access/file-transfers.md)
   * [Tunneling/Port Forwarding](5.-maintaining-access/tunneling.md)
+* [Active Directory](active-directory/README.md)
+  * [NTLM and NetNTLM](active-directory/ntlm-and-netntlm.md)
