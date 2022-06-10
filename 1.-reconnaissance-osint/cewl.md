@@ -4,7 +4,7 @@ CeWL is a ruby tool that spiders webpages and outputs wordlists for use other br
 
 ### CeWL - scraping webpages
 
-```
+```text
 cewl [options] <url>
 Example: cewl -m 6 -w megacorp-cewl.txt www.megacorpone.com
 -d = depth to spider, default 2
@@ -13,3 +13,6 @@ Example: cewl -m 6 -w megacorp-cewl.txt www.megacorpone.com
 -c = count, show word count for each word entry
 -v = verbose
 ```
+
+
+

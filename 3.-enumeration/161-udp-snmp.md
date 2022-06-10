@@ -2,7 +2,7 @@
 
 ### Simple Network Management Protocol
 
-SNMP is commonly misunderstood resulting in misconfigurations.
+SNMP is commonly misunderstood resulting in misconfigurations.&#x20;
 
 ```
 nmap -sU --open -p 161 10.11.1.1-254 
