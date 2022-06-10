@@ -2,18 +2,18 @@
 
 ### NetBIOS/Server Message Block
 
-NetBIOS listens on TCP 139 and several UDP ports. SMB (TCP 445) and NetBIOS are separate protocols; however, modern implementations of SMB often utilize NetBIOS over TCP for backwards compatibility. SMB has a history of vulnerabilities but we are primarily interested in SMB for enumeration of shares to search for credentials, backups and other information that may help us gain a foothold.
+NetBIOS listens on TCP 139 and several UDP ports. SMB \(TCP 445\) and NetBIOS are separate protocols; however, modern implementations of SMB often utilize NetBIOS over TCP for backwards compatibility. SMB has a history of vulnerabilities but we are primarily interested in SMB for enumeration of shares to search for credentials, backups and other information that may help us gain a foothold.
 
 We can search for NetBios/SMB hosts using nmap:
 
-```
+```text
 nmap -v -p 139,445 10.11.1.1-254 
 sudo nbtscan -r 10.11.1.0/24 
 ```
 
-### NSE scripts
+#### NSE scripts
 
-```
+```text
 nmap -p 139,445 --script=smb* 10.11.1.75
 nmap --script=smb-enum* 10.11.1.227
 nmap -p 139,445 --script=smb-enum-users 10.11.1.75
@@ -21,60 +21,43 @@ nmap -v -p 139,445 -oG smb.txt 10.11.1.1-245 –open
 nmap --script smb-vuln-* 10.10.10.40
 ```
 
-### crackmapexec
-
-```
-crackmapexec smb 10.11.1.5
-```
-
 ### smbclient
 
-```
+```text
 smbclient -L \\$ip\\
 smbclient -L \\\\$ip\\
 smbclient -L \\\\$ip\\$share
-smbclient -L //10.11.1.5 - nomarl login attempt
-smbclient -N -L //10.11.1.5 -null login attempt
-smbclient -U '' -L //10.11.1.5 - empty username attempt
-smbclient -U '.' -L //10.11.1.5 - username field pre-filled
-sudo nbtscan -r 10.11.1.0/24 - Enumerate NetBiosNames, Users, servers, Mac Addresses for SMB
-```
-
-### smbmap
-
-```
-smbmap -H 10.11.1.5 - attempt to view shares (can append user / pass etc or blanks )
 ```
 
 ### enum4linux
 
-```
+```text
 enum4linux 10.11.1.127
 enum4linux -a -v 10.11.1.227
 ```
 
 ### showmount
 
-```
+```text
 showmount -e $targetip
 ```
 
 ### mount
 
-```
+```text
 mount -t cifs -o username=user,password=password //x.x.x.x/share /mnt/share
 ```
 
 ### Download shares
 
-```
+```text
 get log.txt --allows you to download single files
 smbget -R smb://ipaddress/sharename
 ```
 
 ### smbclient.py
 
-```
+```text
 python3 /opt/impacket/examples/smbclient.py username@target-ip
 python3 /opt/impacket/examples/smbclient.py 'username'@target-ip
 python3 /opt/impacket/examples/smbclient.py ''@target-ip
@@ -85,3 +68,4 @@ python3 /opt/impacket/examples/smbclient.py ''@target-ip
 * Metasploit module available, search MS17-010 in MSFconsole
 * Manual - [https://github.com/3ndG4me/AutoBlue-MS17-010](https://github.com/3ndG4me/AutoBlue-MS17-010)
 * Link includes a python script to check for vulnerability **eternal\_checker.py**
+
