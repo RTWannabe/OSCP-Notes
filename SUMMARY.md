@@ -1,58 +1,36 @@
 # Table of contents
 
-* [Welcome](README.md)
-
-## 1. Reconnaissance/ OSINT
-
-* [Overview](1.-reconnaissance-osint/overview.md)
-* [Google hacks](1.-reconnaissance-osint/google-hacks.md)
-* [Email harvesting](1.-reconnaissance-osint/email-harvesting.md)
-* [CeWL](1.-reconnaissance-osint/cewl.md)
-
-## 2. Scanning
-
-* [Port Scanning with Nmap](2.-scanning/port-scanning-with-nmap.md)
-* [Nmap Scripting Engine](2.-scanning/nmap-scripting-engine.md)
-
-## 3. Enumeration
-
-* [21 - FTP](3.-enumeration/21-ftp.md)
-* [22 - SSH](3.-enumeration/22-ssh.md)
-* [25 - SMTP](3.-enumeration/25-smtp.md)
-* [53 - DNS](3.-enumeration/53-dns.md)
-* [80/443 - HTTP\(s\)](3.-enumeration/80-443-http-s.md)
-* [111 - NFS](3.-enumeration/111-nfs.md)
-* [135 - RPC](3.-enumeration/135-rpc.md)
-* [139/445 - NetBIOS/SMB](3.-enumeration/139-445-netbios-smb.md)
-* [161 \(UDP\) - SNMP](3.-enumeration/161-udp-snmp.md)
-* [Wordpress](3.-enumeration/wordpress.md)
-* [Finger \(Solaris\)](3.-enumeration/finger-solaris.md)
-* [Active Directory](3.-enumeration/active-directory.md)
-
-## 4. Exploitation
-
-* [Web application attacks](4.-exploitation/web-application-attacks.md)
-* [Password attacks](4.-exploitation/password-attacks.md)
-* [Metasploit](4.-exploitation/metasploit.md)
-* [Buffer overflows](4.-exploitation/buffer-overflows.md)
-
-## 5. Maintaining access
-
-* [Upgrading simple shells](5.-maintaining-access/shells.md)
-* [Shells](5.-maintaining-access/shells-1.md)
-* [MSFvenom](5.-maintaining-access/msfvenom.md)
-* [File transfers](5.-maintaining-access/file-transfers.md)
-* [Linux privilege escalation](5.-maintaining-access/linux-privilege-escalation.md)
-* [Windows privilege escalation](5.-maintaining-access/windows-privilege-escalation.md)
-* [Tunneling/Port Forwarding](5.-maintaining-access/tunneling.md)
-
-## 6. Miscellaneous
-
-* [Connections](6.-miscellaneous/connections.md)
-
-## 7. Walkthroughs
-
-* [HTB - Blunder](7.-walkthroughs/htb-blunder.md)
-* [HTB - Haircut](7.-walkthroughs/htb-haircut.md)
-* [THM -HackPark](7.-walkthroughs/thm-hackpark.md)
-
+* [Reconnaissance](README.md)
+  * [Google hacks](overview/google-hacks.md)
+  * [CeWL](overview/cewl.md)
+  * [Email harvesting](overview/email-harvesting.md)
+* [Scanning](scanning/README.md)
+  * [Port Scanning with Nmap](scanning/port-scanning-with-nmap.md)
+  * [Nmap Scripting Engine](scanning/nmap-scripting-engine.md)
+* [Enumeration](enumeration/README.md)
+  * [21 - FTP](enumeration/21-ftp.md)
+  * [22 - SSH](enumeration/22-ssh.md)
+  * [25 - SMTP](enumeration/25-smtp.md)
+  * [53 - DNS](enumeration/53-dns.md)
+  * [80/443 - HTTP(s)](enumeration/80-443-http-s.md)
+  * [111 - NFS](enumeration/111-nfs.md)
+  * [135 - RPC](enumeration/135-rpc.md)
+  * [139/445 - NetBIOS/SMB](enumeration/139-445-netbios-smb.md)
+  * [161 (UDP) - SNMP](enumeration/161-udp-snmp.md)
+  * [Wordpress](enumeration/wordpress.md)
+  * [Finger (Solaris)](enumeration/finger-solaris.md)
+  * [Active Directory](enumeration/active-directory.md)
+* [Exploitation](exploitation/README.md)
+  * [Web application attacks](exploitation/web-application-attacks.md)
+  * [Password attacks](exploitation/password-attacks.md)
+  * [Metasploit](exploitation/metasploit.md)
+  * [Buffer overflows](exploitation/buffer-overflows.md)
+* [Privilege Escalation](privilege-escalation/README.md)
+  * [Windows privilege escalation](privilege-escalation/windows-privilege-escalation.md)
+  * [Linux privilege escalation](privilege-escalation/linux-privilege-escalation.md)
+* [Maintain Access](maintain-access/README.md)
+  * [Shells](maintain-access/shells-1.md)
+  * [Upgrading simple shells](maintain-access/shells.md)
+  * [MSFvenom](maintain-access/msfvenom.md)
+  * [File transfers](maintain-access/file-transfers.md)
+  * [Tunneling/Port Forwarding](maintain-access/tunneling.md)
