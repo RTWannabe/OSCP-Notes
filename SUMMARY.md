@@ -15,7 +15,7 @@
   * [80/443 - HTTP(s)](3.-enumeration/80-443-http-s.md)
   * [111 - NFS](3.-enumeration/111-nfs.md)
   * [135 - RPC](3.-enumeration/135-rpc.md)
-  * [139/445 - NetBIOS/SMB](3.-enumeration/139-445-netbios-smb.md)
+  * [139/445 - SMB / NetBIOS](3.-enumeration/139-445-netbios-smb.md)
   * [161 (UDP) - SNMP](3.-enumeration/161-udp-snmp.md)
   * [Wordpress](3.-enumeration/wordpress.md)
   * [Finger (Solaris)](3.-enumeration/finger-solaris.md)
