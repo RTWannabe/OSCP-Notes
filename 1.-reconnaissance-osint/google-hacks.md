@@ -8,7 +8,6 @@ filetype, inurl, intitle are also useful
 
 `Intitle:”netbotz appliance” “OK” -filetype:pdf`
 
-### Google Hacking \(GHDB\) 
+### Google Hacking (GHDB)
 
 [https://www.exploit-db.com/google-hacking-database](https://www.exploit-db.com/google-hacking-database)
-
