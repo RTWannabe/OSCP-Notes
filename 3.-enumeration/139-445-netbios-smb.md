@@ -33,11 +33,17 @@ crackmapexec smb 10.11.1.5
 smbclient -L \\$ip\\
 smbclient -L \\\\$ip\\
 smbclient -L \\\\$ip\\$share
-smbclient -L //10.11.1.5` - nomarl login attempt
-smbclient -N -L //10.11.1.5` -null login attempt
-smbclient -U '' -L //10.11.1.5` - empty username attempt
-smbclient -U '.' -L //10.11.1.5` - username field pre-filled
-sudo nbtscan -r 10.11.1.0/24` - Enumerate NetBiosNames, Users, servers, Mac Addresses for SMB
+smbclient -L //10.11.1.5 - nomarl login attempt
+smbclient -N -L //10.11.1.5 -null login attempt
+smbclient -U '' -L //10.11.1.5 - empty username attempt
+smbclient -U '.' -L //10.11.1.5 - username field pre-filled
+sudo nbtscan -r 10.11.1.0/24 - Enumerate NetBiosNames, Users, servers, Mac Addresses for SMB
+```
+
+### smbmap
+
+```
+smbmap -H 10.11.1.5 - attempt to view shares (can append user / pass etc or blanks )
 ```
 
 ### enum4linux
