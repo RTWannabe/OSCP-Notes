@@ -1,10 +1,11 @@
 # Port Scanning with Nmap
 
-Nmap is easily one of the most popular penetration testing tools.  While it started as a simple port scanner, the tool has grown immensely and is now performs multiple functions.  Knowing how to utilize Nmap's options to produce the desired level of detail in your scans is incredibly useful.  Below are  some example scan commands, as well as a list of the most commonly used options.
+Nmap is easily one of the most popular penetration testing tools. While it started as a simple port scanner, the tool has grown immensely and is now performs multiple functions. Knowing how to utilize Nmap's options to produce the desired level of detail in your scans is incredibly useful. Below are some example scan commands, as well as a list of the most commonly used options.
 
 #### My preferred scans
 
 ```
+Initial scan: sudo nmap -sC -sV -O -vvv -oA scan 10.11.1.5
 Quick/standard scan: nmap -sC -sV 10.11.1.5
 Deep scan: nmap -p- -sC -sV 10.11.1.5
 UDP scan: nmap -sU -F 10.11.1.5
@@ -42,7 +43,7 @@ UDP scan: nmap -sU -F 10.11.1.5
 -iL <filename> = scans list of IP addresses contained in a txt file
 ```
 
-#### Outputting scan results&#x20;
+#### Outputting scan results
 
 ```
 -oN = outputs results in normal txt format
